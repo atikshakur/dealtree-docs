@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Product Guide",
-  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "name": "Dealtree Product guide",
+  "description": "Step-by-step guidance for using Dealtree from setup to account execution.",
   "colors": {
     "primary": "#166E3F",
     "light": "#26BD6C",
@@ -16,7 +16,13 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+    "options": [
+      "copy",
+      "view",
+      "assistant",
+      "mcp",
+      "add-mcp"
+    ]
   },
   "navigation": {
     "global": {
@@ -27,65 +33,201 @@
           "href": "/"
         },
         {
-          "anchor": "Changelog",
-          "icon": "scroll-text",
-          "href": "https://www.mintlify.com/docs/changelog"
-        },
-        {
-          "anchor": "Help",
-          "icon": "life-buoy",
-          "href": "https://www.mintlify.com/docs/contact-support"
+          "anchor": "User guide",
+          "icon": "book-open",
+          "href": "/user-guide/overview"
         }
       ]
     },
     "directory": "card",
     "groups": [
       {
-        "group": "Platform",
-        "icon": "layers",
+        "group": "User guide",
+        "icon": "book-open",
         "expanded": true,
         "pages": [
-          "platform/quickstart",
-          "platform/key-concepts",
-          "platform/configuration/settings",
-          "platform/configuration/user-management",
-          "platform/administration/roles-permissions"
-        ]
-      },
-      {
-        "group": "Analytics",
-        "icon": "chart-bar",
-        "expanded": true,
-        "pages": [
-          "analytics/quickstart",
-          "analytics/connect-data",
-          "analytics/dashboards/create-dashboard",
-          "analytics/reports/scheduled-reports"
-        ]
-      },
-      {
-        "group": "Integrations",
-        "icon": "plug",
-        "expanded": true,
-        "pages": [
-          "integrations/quickstart",
-          "integrations/authentication",
-          "integrations/connectors/crm",
-          "integrations/webhooks/configure"
+          "user-guide/overview",
+          {
+            "group": "1. Introduction to Dealtree",
+            "root": "user-guide/introduction",
+            "expanded": false,
+            "pages": [
+              "user-guide/introduction/1-1-what-is-dealtree",
+              "user-guide/introduction/1-2-why-choose-dealtree",
+              "user-guide/introduction/1-3-who-is-dealtree-for",
+              "user-guide/introduction/1-4-benefits-of-dealtree",
+              "user-guide/introduction/1-5-how-dealtree-differentiates",
+              "user-guide/introduction/1-6-plans-credits-pricing"
+            ]
+          },
+          {
+            "group": "2. Getting started",
+            "root": "user-guide/getting-started",
+            "expanded": false,
+            "pages": [
+              "user-guide/getting-started/2-1-sign-up",
+              "user-guide/getting-started/2-2-account-verification",
+              "user-guide/getting-started/2-3-log-in",
+              "user-guide/getting-started/2-4-accessing-main-interface",
+              "user-guide/getting-started/2-5-understanding-dashboard",
+              "user-guide/getting-started/2-6-setting-up-seller-context",
+              "user-guide/getting-started/2-7-resetting-password"
+            ]
+          },
+          {
+            "group": "3. Managing accounts",
+            "root": "user-guide/managing-accounts",
+            "expanded": false,
+            "pages": [
+              "user-guide/managing-accounts/3-1-accounts-dashboard",
+              "user-guide/managing-accounts/3-2-add-new-account",
+              "user-guide/managing-accounts/3-3-import-accounts-by-csv",
+              "user-guide/managing-accounts/3-4-open-account-workspace",
+              "user-guide/managing-accounts/3-5-edit-account-details",
+              "user-guide/managing-accounts/3-6-delete-account",
+              "user-guide/managing-accounts/3-7-account-status-complexity"
+            ]
+          },
+          {
+            "group": "4. Account workspace",
+            "root": "user-guide/account-workspace",
+            "expanded": false,
+            "pages": [
+              "user-guide/account-workspace/4-1-account-overview",
+              "user-guide/account-workspace/4-2-company-information",
+              "user-guide/account-workspace/4-3-employee-count-metadata",
+              "user-guide/account-workspace/4-4-sync-organization",
+              "user-guide/account-workspace/4-5-account-tabs-overview"
+            ]
+          },
+          {
+            "group": "5. Notes",
+            "root": "user-guide/notes",
+            "expanded": false,
+            "pages": [
+              "user-guide/notes/5-1-notes-dashboard",
+              "user-guide/notes/5-2-add-account-notes",
+              "user-guide/notes/5-3-edit-notes",
+              "user-guide/notes/5-4-delete-notes",
+              "user-guide/notes/5-5-how-notes-improve-results"
+            ]
+          },
+          {
+            "group": "6. Org chart",
+            "root": "user-guide/org-chart",
+            "expanded": false,
+            "pages": [
+              "user-guide/org-chart/6-1-org-chart-overview",
+              "user-guide/org-chart/6-2-generate-or-sync-org-chart",
+              "user-guide/org-chart/6-3-master-org-chart",
+              "user-guide/org-chart/6-4-browse-departments",
+              "user-guide/org-chart/6-5-view-stakeholder-profiles",
+              "user-guide/org-chart/6-6-add-stakeholder",
+              "user-guide/org-chart/6-7-edit-org-chart",
+              "user-guide/org-chart/6-8-export-stakeholders",
+              "user-guide/org-chart/6-9-org-chart-best-practices"
+            ]
+          },
+          {
+            "group": "7. Buying committee",
+            "root": "user-guide/buying-committee",
+            "expanded": false,
+            "pages": [
+              "user-guide/buying-committee/7-1-buying-committee-overview",
+              "user-guide/buying-committee/7-2-generate-buying-committee",
+              "user-guide/buying-committee/7-3-buying-committee-roles",
+              "user-guide/buying-committee/7-4-economic-buyer",
+              "user-guide/buying-committee/7-5-champion",
+              "user-guide/buying-committee/7-6-end-user",
+              "user-guide/buying-committee/7-7-technical-buyer",
+              "user-guide/buying-committee/7-8-blocker",
+              "user-guide/buying-committee/7-9-procurement-legal",
+              "user-guide/buying-committee/7-10-confidence-scores",
+              "user-guide/buying-committee/7-11-role-not-covered"
+            ]
+          },
+          {
+            "group": "8. Action plan",
+            "root": "user-guide/action-plan",
+            "expanded": false,
+            "pages": [
+              "user-guide/action-plan/8-1-action-plan-overview",
+              "user-guide/action-plan/8-2-generate-action-plan",
+              "user-guide/action-plan/8-3-recommended-tasks",
+              "user-guide/action-plan/8-4-task-priority",
+              "user-guide/action-plan/8-5-task-status",
+              "user-guide/action-plan/8-6-stakeholder-specific-actions",
+              "user-guide/action-plan/8-7-multi-threading-recommendations",
+              "user-guide/action-plan/8-8-using-action-plan"
+            ]
+          },
+          {
+            "group": "9. Seller",
+            "root": "user-guide/seller-profile",
+            "expanded": false,
+            "pages": [
+              "user-guide/seller-profile/9-1-seller-profile-overview",
+              "user-guide/seller-profile/9-2-add-product-name",
+              "user-guide/seller-profile/9-3-add-product-category",
+              "user-guide/seller-profile/9-4-add-product-description",
+              "user-guide/seller-profile/9-5-update-seller-context",
+              "user-guide/seller-profile/9-6-seller-context-impact"
+            ]
+          },
+          {
+            "group": "10. Team",
+            "root": "user-guide/team",
+            "expanded": false,
+            "pages": [
+              "user-guide/team/10-1-team-dashboard",
+              "user-guide/team/10-2-invite-team-member",
+              "user-guide/team/10-3-manage-team-members",
+              "user-guide/team/10-4-team-roles-permissions",
+              "user-guide/team/10-5-remove-team-member",
+              "user-guide/team/10-6-seat-limits"
+            ]
+          },
+          {
+            "group": "11. Billing and credits",
+            "root": "user-guide/billing-and-credits",
+            "expanded": false,
+            "pages": [
+              "user-guide/billing-and-credits/11-1-billing-dashboard",
+              "user-guide/billing-and-credits/11-2-current-plan",
+              "user-guide/billing-and-credits/11-3-trial-status",
+              "user-guide/billing-and-credits/11-4-included-credits",
+              "user-guide/billing-and-credits/11-5-purchased-credits",
+              "user-guide/billing-and-credits/11-6-how-credits-are-used",
+              "user-guide/billing-and-credits/11-7-buying-additional-credits",
+              "user-guide/billing-and-credits/11-8-upgrading-managing-subscription"
+            ]
+          },
+          {
+            "group": "12. Best practices",
+            "root": "user-guide/best-practices",
+            "expanded": false,
+            "pages": [
+              "user-guide/best-practices/12-1-best-workflow-new-account",
+              "user-guide/best-practices/12-2-best-practices-sdrs-aes",
+              "user-guide/best-practices/12-3-best-practices-founders",
+              "user-guide/best-practices/12-4-best-practices-consultants-agencies",
+              "user-guide/best-practices/12-5-best-practices-enterprise-sales"
+            ]
+          }
         ]
       }
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/brand-light.svg",
+    "dark": "/logo/brand-dark.svg"
   },
   "navbar": {
     "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.dealtree.io"
     }
   },
   "footer": {
